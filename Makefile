@@ -7,7 +7,7 @@ compile: deps
 	rebar3 compile
 
 deps:
-	test -d deps
+	$(info No checking deps since rebar3)
 
 clean:
 	rebar3 clean
