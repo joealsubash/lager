@@ -7,7 +7,7 @@ compile: deps
 	rebar3 compile
 
 deps:
-	test -d deps || rebar3 get-deps
+	test -d deps
 
 clean:
 	rebar3 clean
