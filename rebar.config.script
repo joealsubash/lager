@@ -6,9 +6,7 @@ CONFIG1 = case code:which(persistent_term) of
         lists:keyreplace(erl_opts, 1, CONFIG, {erl_opts, [{d, 'HAVE_PERSISTENT_TERM'}|ExistingErlOpts]});
     non_existing ->
         CONFIG
-    end,
-
-
+    end.
 
 # case erlang:function_exported(rebar3, main, 1) of
 #     true -> % rebar3
