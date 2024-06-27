@@ -4,7 +4,7 @@
 all: deps compile
 
 compile: deps
-	rebar3 compile
+	DEBUG=1 rebar3 compile
 
 deps:
 	$(info No checking deps since rebar3)
